@@ -4,5 +4,17 @@
 
 ![screenshot](screenshot.png)
 
-Extension to easily get your current external ip address in your clipboard!
+## Requirement
+
+```
+$ yum install python-netifaces -y
+```
+OR
+
+```
+apt install python-netifaces -y
+```
+
+Extension to easily get your current external / internal ip address in your clipboard!
+
 
