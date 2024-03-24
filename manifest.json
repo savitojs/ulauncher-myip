@@ -1,19 +1,36 @@
 {
-	"required_api_version": "^2.0.0",
-	"name": "MyIP",
-	"description": "Get your current external ip address.",
-	"developer_name": "Rolf Koenders",
-	"icon": "images/icon.png",
-	"options": {
-		"query_debounce": 0.1
-	},
-	"preferences": [
-		{
-			"id": "ip_kw",
-			"type": "keyword",
-			"name": "ip",
-			"description": "Get current IP address.",
-			"default_value": "ip"
-		}
-	]
+    "required_api_version": "^2.0.0",
+    "name": "MyIP",
+    "description": "Get your current external IP address.",
+    "developer_name": "Rolf Koenders",
+    "icon": "images/icon.png",
+    "options": {
+        "query_debounce": 0.1
+    },
+    "preferences": [
+        {
+            "id": "ip_kw",
+            "type": "keyword",
+            "name": "ip",
+            "description": "Get current IP address.",
+            "default_value": "ip"
+        },
+        {
+            "id": "ip_show",
+            "type": "select",
+            "name": "IP to show",
+            "description": "Which IP address should be shown",
+            "default_value": "all",
+            "options": [
+                {
+                    "value": "all",
+                    "text": "Public and local"
+                },
+                {
+                    "value": "local",
+                    "text": "Local"
+                }
+            ]
+        }
+    ]
 }
